@@ -5,7 +5,9 @@
     --bg-color: #f4f7f6; 
     --text-color: #2c3e50;
     --white: #ffffff;
-    --font-family: 'Poppins', sans-serif;
+    /* দুইটি ফন্ট সেট করা হলো */
+    --font-en: 'Poppins', sans-serif;
+    --font-bn: 'Hind Siliguri', sans-serif;
 }
 
 * {
@@ -15,14 +17,32 @@
     scroll-behavior: smooth;
 }
 
+/* ডিফল্ট ফন্ট ইংরেজি */
 body {
-    font-family: var(--font-family);
+    font-family: var(--font-en);
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.8;
     overflow-x: hidden;
 }
 
+/* যখন বাংলা মোড চালু হবে তখন ফন্ট পরিবর্তন হবে */
+body.bangla-mode {
+    font-family: var(--font-bn);
+}
+
+/* ভাষা পরিবর্তন কন্ট্রোল (ডিফল্ট: ইংরেজি দেখাবে, বাংলা লুকানো থাকবে) */
+.bn { display: none !important; }
+.en { display: block; }
+
+span.en, a.en { display: inline-block; }
+
+/* বাংলা মোড চালু হলে (ইংরেজি লুকানো, বাংলা দেখাবে) */
+body.bangla-mode .en { display: none !important; }
+body.bangla-mode .bn { display: block !important; }
+body.bangla-mode span.bn, body.bangla-mode a.bn { display: inline-block !important; }
+
+/* লেআউট ডিজাইন */
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -50,11 +70,13 @@ nav {
     font-weight: 700;
     color: var(--primary-color);
     text-decoration: none;
+    font-family: var(--font-en); /* লোগো সবসময় ইংরেজিতে থাকবে */
 }
 
 .nav-links {
     display: flex;
     list-style: none;
+    align-items: center;
 }
 
 .nav-links li {
@@ -71,6 +93,29 @@ nav {
 
 .nav-links a:hover {
     color: var(--secondary-color);
+}
+
+/* ভাষা পরিবর্তন বাটন ডিজাইন */
+.lang-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--font-bn);
+    font-weight: 600;
+    font-size: 15px;
+    margin-left: 25px;
+    transition: background-color 0.3s;
+}
+
+.lang-btn:hover {
+    background-color: #2980b9;
+}
+
+body.bangla-mode .lang-btn {
+    font-family: var(--font-en); /* বাংলা মোডে বাটনটিতে "English" লেখা থাকবে */
 }
 
 .menu-btn {
@@ -113,6 +158,7 @@ nav {
     font-weight: 700;
     margin-bottom: 10px;
     text-transform: uppercase;
+    font-family: var(--font-en);
 }
 
 .hero p {
@@ -213,6 +259,12 @@ section:nth-child(even) {
     font-size: 30px;
     color: var(--secondary-color);
     margin-bottom: 10px;
+}
+
+.stat-card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: var(--font-en);
 }
 
 .skills-grid {
@@ -360,6 +412,11 @@ footer {
     .menu-btn {
         display: block;
     }
+    .lang-btn {
+        margin-left: 0;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
     .nav-links {
         display: none;
         flex-direction: column;
@@ -396,4 +453,3 @@ footer {
     .timeline-item::after { left: 21px; }
     .right { left: 0; }
 }
-
