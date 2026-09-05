@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MD. IBRAHIM - Professional Portfolio</title>
-    <!-- প্রফেশনাল ফন্ট -->
+    <!-- Google Fonts: Poppins (English) & Hind Siliguri (Bengali) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- আইকন লাইব্রেরি -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Icon Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- আপনার তৈরি করা CSS ফাইলের লিংক -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,13 +19,31 @@
             <nav>
                 <a href="#" class="logo">MD. IBRAHIM</a>
                 <ul class="nav-links" id="nav-links">
-                    <li><a href="#about">আমার সম্পর্কে</a></li>
-                    <li><a href="#skills">দক্ষতা</a></li>
-                    <li><a href="#education">শিক্ষাগত যোগ্যতা</a></li>
-                    <li><a href="#projects">প্রজেক্ট</a></li>
-                    <li><a href="#contact">যোগাযোগ</a></li>
+                    <li>
+                        <a href="#about" class="en">About Me</a>
+                        <a href="#about" class="bn">আমার সম্পর্কে</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="en">Skills</a>
+                        <a href="#skills" class="bn">দক্ষতা</a>
+                    </li>
+                    <li>
+                        <a href="#education" class="en">Education</a>
+                        <a href="#education" class="bn">শিক্ষাগত যোগ্যতা</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="en">Projects</a>
+                        <a href="#projects" class="bn">প্রজেক্ট</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="en">Contact</a>
+                        <a href="#contact" class="bn">যোগাযোগ</a>
+                    </li>
                 </ul>
-                <!-- মোবাইলের জন্য মেনু আইকন -->
+                <!-- Language Toggle Button -->
+                <button id="lang-toggle" class="lang-btn">বাংলা</button>
+                
+                <!-- Mobile Menu Icon -->
                 <div class="menu-btn" id="menu-btn">
                     <i class="fas fa-bars"></i>
                 </div>
@@ -36,36 +53,51 @@
 
     <section class="hero">
         <div class="container hero-content">
-            <!-- আপনার ছবির লিংক সরাসরি এখানে বসানো হয়েছে -->
             <img src="https://i.postimg.cc/X74D1XnH/4416.jpg" alt="MD. IBRAHIM" class="hero-img">
             
             <h1>MD. IBRAHIM</h1>
-            <p>শিক্ষার্থী | এআই ওয়েব ডেভেলপার | সোশ্যাল মিডিয়া প্রবলেম সলভার</p>
+            
+            <p class="en">Student | AI Web Developer | Social Media Problem Solver</p>
+            <p class="bn">শিক্ষার্থী | এআই ওয়েব ডেভেলপার | সোশ্যাল মিডিয়া প্রবলেম সলভার</p>
+            
             <div class="btn-group">
-                <a href="#contact" class="btn btn-primary">যোগাযোগ করুন</a>
-                <a href="#projects" class="btn btn-secondary">প্রজেক্ট দেখুন</a>
+                <a href="#contact" class="btn btn-primary en">Contact Me</a>
+                <a href="#contact" class="btn btn-primary bn">যোগাযোগ করুন</a>
+                
+                <a href="#projects" class="btn btn-secondary en">View Projects</a>
+                <a href="#projects" class="btn btn-secondary bn">প্রজেক্ট দেখুন</a>
             </div>
         </div>
     </section>
 
     <section id="about">
         <div class="container">
-            <h2 class="section-title">আমার সম্পর্কে</h2>
+            <h2 class="section-title en">About Me</h2>
+            <h2 class="section-title bn">আমার সম্পর্কে</h2>
+            
             <div class="about-content">
                 <div class="about-text">
-                    <p>আমি বর্তমানে মানিকছড়ি গিরি মৈত্রী সরকারি ডিগ্রি কলেজে এইচএসসি দ্বিতীয় বর্ষে বিজ্ঞান বিভাগে পড়াশোনা করছি। ২০২৫ সালে আমি এসএসসি পরীক্ষায় জিপিএ-৫.০০ পেয়ে উত্তীর্ণ হই।</p>
-                    <p>আমি ভবিষ্যৎ এ একজন দক্ষ ইলেকট্রনিক ইঞ্জিনিয়ার হতে চাই। বড় হয়ে কেবল স্বপ্ন দেখার বদলে বাস্তব কাজের মাধ্যমে কিছু করতে ভালোবাসি। এআই এর সাহায্যে ওয়েবসাইট তৈরি করা এবং সোশ্যাল মিডিয়া সমস্যা সমাধানের কাজে আমার দারুণ অভিজ্ঞতা রয়েছে। আমি নতুন কিছু শিখতে এবং চ্যালেঞ্জ গ্রহণ করতে সবসময় প্রস্তুত থাকি।</p>
+                    <div class="en">
+                        <p>I am currently studying Science in my second year of HSC at Manikchhari Giri Maitri Government Degree College. I passed my SSC examination in 2025 with a GPA of 5.00.</p>
+                        <p>I aspire to become a skilled Electronic Engineer. Rather than just dreaming, I believe in practical work. I have extensive experience in building websites using AI and resolving social media issues. I am always eager to learn new things and embrace challenges.</p>
+                    </div>
+                    <div class="bn">
+                        <p>আমি বর্তমানে মানিকছড়ি গিরি মৈত্রী সরকারি ডিগ্রি কলেজে এইচএসসি দ্বিতীয় বর্ষে বিজ্ঞান বিভাগে পড়াশোনা করছি। ২০২৫ সালে আমি এসএসসি পরীক্ষায় জিপিএ-৫.০০ পেয়ে উত্তীর্ণ হই।</p>
+                        <p>আমি ভবিষ্যৎ এ একজন দক্ষ ইলেকট্রনিক ইঞ্জিনিয়ার হতে চাই। বড় হয়ে কেবল স্বপ্ন দেখার বদলে বাস্তব কাজের মাধ্যমে কিছু করতে ভালোবাসি। এআই এর সাহায্যে ওয়েবসাইট তৈরি করা এবং সোশ্যাল মিডিয়া সমস্যা সমাধানের কাজে আমার দারুণ অভিজ্ঞতা রয়েছে। আমি নতুন কিছু শিখতে এবং চ্যালেঞ্জ গ্রহণ করতে সবসময় প্রস্তুত থাকি।</p>
+                    </div>
                 </div>
                 <div class="about-stats">
                     <div class="stat-card">
                         <i class="fas fa-graduation-cap"></i>
                         <h3>HSC Student</h3>
-                        <p>বিজ্ঞান বিভাগ</p>
+                        <p class="en">Science Group</p>
+                        <p class="bn">বিজ্ঞান বিভাগ</p>
                     </div>
                     <div class="stat-card">
                         <i class="fas fa-code"></i>
                         <h3>Web Developer</h3>
-                        <p>এআই এর সাহায্যে</p>
+                        <p class="en">Using AI</p>
+                        <p class="bn">এআই এর সাহায্যে</p>
                     </div>
                 </div>
             </div>
@@ -74,27 +106,37 @@
 
     <section id="skills">
         <div class="container">
-            <h2 class="section-title">আমার দক্ষতা</h2>
+            <h2 class="section-title en">My Skills</h2>
+            <h2 class="section-title bn">আমার দক্ষতা</h2>
+            
             <div class="skills-grid">
                 <div class="skill-card">
                     <i class="fas fa-user-shield"></i>
-                    <h3>সোশ্যাল মিডিয়া সমস্যা সমাধান</h3>
-                    <p>অ্যাকাউন্ট রিকভারি, নিরাপত্তা এবং প্রযুক্তিগত সমস্যা সমাধান।</p>
+                    <h3 class="en">Social Media Problem Solving</h3>
+                    <h3 class="bn">সোশ্যাল মিডিয়া সমস্যা সমাধান</h3>
+                    <p class="en">Account recovery, security, and resolving technical issues.</p>
+                    <p class="bn">অ্যাকাউন্ট রিকভারি, নিরাপত্তা এবং প্রযুক্তিগত সমস্যা সমাধান।</p>
                 </div>
                 <div class="skill-card">
                     <i class="fas fa-robot"></i>
-                    <h3>এআই ওয়েবসাইট তৈরি</h3>
-                    <p>আধুনিক টুলস ব্যবহার করে দ্রুত এবং রেস্পন্সিভ ওয়েবসাইট তৈরি।</p>
+                    <h3 class="en">AI Web Development</h3>
+                    <h3 class="bn">এআই ওয়েবসাইট তৈরি</h3>
+                    <p class="en">Building fast and responsive websites utilizing modern AI tools.</p>
+                    <p class="bn">আধুনিক টুলস ব্যবহার করে দ্রুত এবং রেস্পন্সিভ ওয়েবসাইট তৈরি।</p>
                 </div>
                 <div class="skill-card">
                     <i class="fas fa-microchip"></i>
-                    <h3>ইলেকট্রনিক্স কাজ</h3>
-                    <p>সার্কিট ডিজাইন, সোলার সিস্টেম এবং ব্যবহারিক ইলেকট্রনিক্স কাজ।</p>
+                    <h3 class="en">Electronics Work</h3>
+                    <h3 class="bn">ইলেকট্রনিক্স কাজ</h3>
+                    <p class="en">Circuit design, solar systems, and practical electronics projects.</p>
+                    <p class="bn">সার্কিট ডিজাইন, সোলার সিস্টেম এবং ব্যবহারিক ইলেকট্রনিক্স কাজ।</p>
                 </div>
                 <div class="skill-card">
                     <i class="fas fa-video"></i>
-                    <h3>ভিডিও এডিটিং</h3>
-                    <p>প্রফেশনাল কন্টেন্ট তৈরির জন্য ভিডিও এডিটিং দক্ষতা।</p>
+                    <h3 class="en">Video Editing</h3>
+                    <h3 class="bn">ভিডিও এডিটিং</h3>
+                    <p class="en">Professional video editing skills for content creation.</p>
+                    <p class="bn">প্রফেশনাল কন্টেন্ট তৈরির জন্য ভিডিও এডিটিং দক্ষতা।</p>
                 </div>
             </div>
         </div>
@@ -102,20 +144,32 @@
 
     <section id="education">
         <div class="container">
-            <h2 class="section-title">শিক্ষাগত যোগ্যতা</h2>
+            <h2 class="section-title en">Education</h2>
+            <h2 class="section-title bn">শিক্ষাগত যোগ্যতা</h2>
+            
             <div class="timeline">
                 <div class="timeline-item left">
                     <div class="timeline-content">
-                        <h3>এইচএসসি (অধ্যয়নরত)</h3>
-                        <p class="year">২০২৫-২০২৬ (বিজ্ঞান)</p>
-                        <p>মানিকছড়ি গিরি মৈত্রী সরকারি ডিগ্রি কলেজ</p>
+                        <h3 class="en">HSC (Ongoing)</h3>
+                        <h3 class="bn">এইচএসসি (অধ্যয়নরত)</h3>
+                        
+                        <p class="year en">2025-2026 (Science)</p>
+                        <p class="year bn">২০২৫-২০২৬ (বিজ্ঞান)</p>
+                        
+                        <p class="en">Manikchhari Giri Maitri Govt. Degree College</p>
+                        <p class="bn">মানিকছড়ি গিরি মৈত্রী সরকারি ডিগ্রি কলেজ</p>
                     </div>
                 </div>
                 <div class="timeline-item right">
                     <div class="timeline-content">
-                        <h3>এসএসসি (উত্তীর্ণ)</h3>
-                        <p class="year">২০২৫</p>
-                        <p>জিপিএ - ৫.০০</p>
+                        <h3 class="en">SSC (Passed)</h3>
+                        <h3 class="bn">এসএসসি (উত্তীর্ণ)</h3>
+                        
+                        <p class="year en">2025</p>
+                        <p class="year bn">২০২৫</p>
+                        
+                        <p class="en">GPA - 5.00</p>
+                        <p class="bn">জিপিএ - ৫.০০</p>
                     </div>
                 </div>
             </div>
@@ -124,27 +178,38 @@
 
     <section id="projects">
         <div class="container">
-            <h2 class="section-title">প্রজেক্ট বা কাজ</h2>
+            <h2 class="section-title en">Projects or Work</h2>
+            <h2 class="section-title bn">প্রজেক্ট বা কাজ</h2>
+            
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-img">প্রজেক্ট ছবি ১</div>
+                    <div class="project-img en">Project Image 1</div>
+                    <div class="project-img bn">প্রজেক্ট ছবি ১</div>
                     <div class="project-details">
-                        <h3>এআই পোর্টফোলিও ওয়েবসাইট</h3>
-                        <p>এটি একটি আধুনিক পোর্টফোলিও ওয়েবসাইট, যা আমি এআই টুলস ব্যবহার করে তৈরি করেছি।</p>
+                        <h3 class="en">AI Portfolio Website</h3>
+                        <h3 class="bn">এআই পোর্টফোলিও ওয়েবসাইট</h3>
+                        <p class="en">A modern portfolio website built using AI tools.</p>
+                        <p class="bn">এটি একটি আধুনিক পোর্টফোলিও ওয়েবসাইট, যা আমি এআই টুলস ব্যবহার করে তৈরি করেছি।</p>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-img">প্রজেক্ট ছবি ২</div>
+                    <div class="project-img en">Project Image 2</div>
+                    <div class="project-img bn">প্রজেক্ট ছবি ২</div>
                     <div class="project-details">
-                        <h3>সোশ্যাল মিডিয়া রিকভারি টুলস</h3>
-                        <p>এটি একটি স্ক্রিপ্ট বা টুলস যা আমি সোশ্যাল মিডিয়া অ্যাকাউন্ট পুনরুদ্ধারে সাহায্য করার জন্য তৈরি করেছি।</p>
+                        <h3 class="en">Social Media Recovery Tool</h3>
+                        <h3 class="bn">সোশ্যাল মিডিয়া রিকভারি টুলস</h3>
+                        <p class="en">A script or tool created to assist in recovering social media accounts.</p>
+                        <p class="bn">এটি একটি স্ক্রিপ্ট বা টুলস যা আমি সোশ্যাল মিডিয়া অ্যাকাউন্ট পুনরুদ্ধারে সাহায্য করার জন্য তৈরি করেছি।</p>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-img">প্রজেক্ট ছবি ৩</div>
+                    <div class="project-img en">Project Image 3</div>
+                    <div class="project-img bn">প্রজেক্ট ছবি ৩</div>
                     <div class="project-details">
-                        <h3>সোলার ইনভার্টার সার্কিট</h3>
-                        <p>এটি একটি ব্যবহারিক ইলেকট্রনিক্স প্রজেক্ট, যেখানে আমি একটি সোলার ইনভার্টার সার্কিট ডিজাইন করেছি।</p>
+                        <h3 class="en">Solar Inverter Circuit</h3>
+                        <h3 class="bn">সোলার ইনভার্টার সার্কিট</h3>
+                        <p class="en">A practical electronics project involving the design of a solar inverter circuit.</p>
+                        <p class="bn">এটি একটি ব্যবহারিক ইলেকট্রনিক্স প্রজেক্ট, যেখানে আমি একটি সোলার ইনভার্টার সার্কিট ডিজাইন করেছি।</p>
                     </div>
                 </div>
             </div>
@@ -153,9 +218,12 @@
 
     <section id="contact">
         <div class="container">
-            <h2 class="section-title">যোগাযোগ</h2>
+            <h2 class="section-title en">Contact</h2>
+            <h2 class="section-title bn">যোগাযোগ</h2>
+            
             <div class="contact-content">
-                <p>আমার কাজ বা অন্য কোনো প্রয়োজনে যোগাযোগ করতে পারেন:</p>
+                <p class="en">You can contact me on the following platforms for any queries:</p>
+                <p class="bn">আমার কাজ বা অন্য কোনো প্রয়োজনে যোগাযোগ করতে পারেন:</p>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/share/1TA5pRzgho/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://wa.me/" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
@@ -172,7 +240,6 @@
         </div>
     </footer>
 
-    <!-- আপনার তৈরি করা JavaScript ফাইলের লিংক -->
     <script src="script.js"></script>
 </body>
 </html>
