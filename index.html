@@ -4,23 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>MD.IBRAHIM — Personal Portfolio</title>
+
     <meta name="description"
-        content="MD.IBRAHIM — Student, Web Creator and Electronics Enthusiast">
+        content="MD.IBRAHIM — Student, website creator, electronics enthusiast and social media problem solver.">
 
-    <title>MD.IBRAHIM | Personal Portfolio</title>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -29,118 +17,107 @@
 <!-- ================= HEADER ================= -->
 
 <header class="header">
+    <div class="container nav-container">
 
-    <a href="#home" class="logo">
-        MD<span>.</span>IBRAHIM
-    </a>
+        <a href="#home" class="logo">
+            MD<span>.</span>IBRAHIM
+        </a>
 
-    <nav class="nav" id="nav">
+        <nav class="nav" id="nav">
+            <a href="#home" data-en="Home" data-bn="হোম">Home</a>
+            <a href="#about" data-en="About" data-bn="আমার সম্পর্কে">About</a>
+            <a href="#skills" data-en="Skills" data-bn="দক্ষতা">Skills</a>
+            <a href="#projects" data-en="Projects" data-bn="প্রজেক্ট">Projects</a>
+            <a href="#contact" data-en="Contact" data-bn="যোগাযোগ">Contact</a>
+        </nav>
 
-        <a href="#home" class="active">Home</a>
+        <div class="nav-actions">
 
-        <a href="#about">About</a>
+            <button id="languageBtn" class="language-btn">
+                <span id="languageText">বাংলা</span>
+            </button>
 
-        <a href="#skills">Skills</a>
+            <button id="menuToggle" class="menu-toggle" aria-label="Menu">
+                ☰
+            </button>
 
-        <a href="#projects">Projects</a>
-
-        <a href="#contact">Contact</a>
-
-    </nav>
-
-    <div class="header-buttons">
-
-        <button id="themeToggle" class="icon-btn">
-            <i class="fa-solid fa-moon"></i>
-        </button>
-
-        <button id="menuToggle" class="icon-btn menu-btn">
-            <i class="fa-solid fa-bars"></i>
-        </button>
+        </div>
 
     </div>
-
 </header>
 
 
 <!-- ================= HERO ================= -->
 
+<main>
+
 <section class="hero" id="home">
 
-    <div class="hero-background"></div>
+    <div class="container hero-grid">
 
-    <div class="hero-container">
+        <div class="hero-content">
 
-        <!-- LEFT -->
-
-        <div class="hero-content reveal">
-
-            <div class="availability">
-
-                <span></span>
-
-                AVAILABLE FOR CREATIVE PROJECTS
-
-            </div>
-
-            <p class="small-title">
-                PERSONAL PORTFOLIO / 2026
+            <p class="eyebrow"
+               data-en="WELCOME TO MY WORLD"
+               data-bn="আমার জগতে আপনাকে স্বাগতম">
+                WELCOME TO MY WORLD
             </p>
 
             <h1>
-                MD.<br>
-                <span>IBRAHIM</span>
+                <span data-en="Hi, I'm" data-bn="হ্যালো, আমি">
+                    Hi, I'm
+                </span>
+
+                <strong>MD.IBRAHIM</strong>
             </h1>
 
-            <h3>
-                Student
-                <b>•</b>
-                Web Creator
-                <b>•</b>
-                Electronics Enthusiast
-            </h3>
+            <h2 data-en="Student • Creator • Electronics Enthusiast"
+                data-bn="শিক্ষার্থী • ক্রিয়েটর • ইলেকট্রনিক্স enthusiast">
+                Student • Creator • Electronics Enthusiast
+            </h2>
 
-            <p class="hero-description">
-
-                Learning, creating and turning ideas into reality.
-                I build digital experiences and work with practical
-                electronics, solar and inverter systems.
-
+            <p class="hero-text"
+               data-en="I am a student; I create websites with AI help and solve social media problems."
+               data-bn="আমি একজন শিক্ষার্থী; AI-এর সাহায্যে ওয়েবসাইট তৈরি করি এবং সোশ্যাল মিডিয়ার বিভিন্ন সমস্যা সমাধানে কাজ করি।">
+                I am a student; I create websites with AI help and solve social media problems.
             </p>
 
             <div class="hero-buttons">
 
-                <a href="#projects" class="btn primary">
+                <a href="#projects"
+                   class="btn btn-primary"
+                   data-en="Explore My Work"
+                   data-bn="আমার কাজ দেখুন">
                     Explore My Work
-                    <i class="fa-solid fa-arrow-right"></i>
                 </a>
 
-                <a href="#contact" class="btn secondary">
-                    Let's Talk
+                <a href="#contact"
+                   class="btn btn-outline"
+                   data-en="Contact Me"
+                   data-bn="যোগাযোগ করুন">
+                    Contact Me
                 </a>
 
             </div>
 
-
-            <div class="social-icons">
+            <div class="social-links">
 
                 <a href="https://www.facebook.com/share/1DYD6DpJhE/"
-                    target="_blank">
-                    <i class="fa-brands fa-facebook-f"></i>
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Facebook
                 </a>
 
                 <a href="https://www.tiktok.com/@ifibrahim948"
-                    target="_blank">
-                    <i class="fa-brands fa-tiktok"></i>
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    TikTok
                 </a>
 
                 <a href="https://youtube.com/@typing-948"
-                    target="_blank">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
-
-                <a href="mailto:Ibrahim71kholil@gmail.com">
-                    <i class="fa-solid fa-envelope"></i>
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    YouTube
                 </a>
 
             </div>
@@ -148,37 +125,20 @@
         </div>
 
 
-        <!-- RIGHT PHOTO -->
+        <div class="hero-image-area">
 
-        <div class="photo-section reveal">
+            <div class="image-frame">
 
-            <div class="photo-frame"></div>
-
-            <div class="photo-card">
-
-                <!-- IMPORTANT: আপনার ছবির path -->
-                <img src="profile.jpg" alt="MD.IBRAHIM">
-
-                <div class="photo-gradient"></div>
-
-                <div class="photo-label">
-
-                    <i class="fa-solid fa-bolt"></i>
-
-                    <span>
-                        Building with purpose
-                    </span>
-
-                </div>
+                <img src="profile.jpg"
+                     alt="MD.IBRAHIM">
 
             </div>
 
-            <div class="photo-info">
-
-                <strong>MD.IBRAHIM</strong>
-
-                <span>Bangladesh</span>
-
+            <div class="image-note">
+                <span data-en="Based in Bangladesh"
+                      data-bn="বাংলাদেশ">
+                    Based in Bangladesh
+                </span>
             </div>
 
         </div>
@@ -192,105 +152,81 @@
 
 <section class="section" id="about">
 
-    <div class="section-heading reveal">
+    <div class="container">
 
-        <span>01 / ABOUT</span>
+        <div class="section-heading">
 
-        <h2>
-            Curious by nature.<br>
-            <em>Focused on the future.</em>
-        </h2>
+            <span class="section-number">01</span>
 
-    </div>
+            <div>
+                <p class="section-label"
+                   data-en="ABOUT ME"
+                   data-bn="আমার সম্পর্কে">
+                    ABOUT ME
+                </p>
 
-
-    <div class="about-container">
-
-        <div class="about-text reveal">
-
-            <p class="about-big">
-
-                I'm <strong>MD. IBRAHIM</strong>,
-                a student and aspiring electronics engineer
-                from Bangladesh.
-
-            </p>
-
-            <p>
-
-                I'm currently studying in HSC 2nd Year.
-                Alongside my studies, I'm passionate about
-                website creation, electronics, solar and
-                inverter systems, video editing and solving
-                social-media related problems.
-
-            </p>
-
-            <p>
-
-                I enjoy learning new technologies and turning
-                ideas into useful digital projects.
-
-                My long-term goal is to become a skilled
-                electronics engineer while continuing to
-                create meaningful digital experiences.
-
-            </p>
+                <h2 data-en="A student with a passion for technology."
+                    data-bn="প্রযুক্তির প্রতি আগ্রহী একজন শিক্ষার্থী।">
+                    A student with a passion for technology.
+                </h2>
+            </div>
 
         </div>
 
 
-        <div class="facts reveal">
+        <div class="about-grid">
 
-            <div class="fact">
+            <div class="about-text">
 
-                <small>EDUCATION</small>
+                <p data-en="I am MD.IBRAHIM, a student who is interested in technology, electronics, websites and digital problem solving."
+                   data-bn="আমি MD.IBRAHIM। প্রযুক্তি, ইলেকট্রনিক্স, ওয়েবসাইট এবং ডিজিটাল সমস্যা সমাধানের প্রতি আমার আগ্রহ রয়েছে।">
+                    I am MD.IBRAHIM, a student who is interested in technology,
+                    electronics, websites and digital problem solving.
+                </p>
 
-                <strong>HSC 2nd Year</strong>
-
-                <p>
-                    Manikchhari Giri Maitri
-                    Government Degree College
+                <p data-en="I enjoy learning new things and using modern tools, including AI, to turn ideas into useful digital projects."
+                   data-bn="নতুন কিছু শেখা এবং AI-এর মতো আধুনিক প্রযুক্তি ব্যবহার করে নিজের আইডিয়াকে বাস্তব ডিজিটাল প্রজেক্টে রূপ দিতে আমি পছন্দ করি।">
+                    I enjoy learning new things and using modern tools,
+                    including AI, to turn ideas into useful digital projects.
                 </p>
 
             </div>
 
 
-            <div class="fact">
+            <div class="facts">
 
-                <small>SSC</small>
+                <div class="fact-card">
+                    <span>Education</span>
+                    <strong data-en="HSC 2nd Year"
+                            data-bn="HSC ২য় বর্ষ">
+                        HSC 2nd Year
+                    </strong>
+                </div>
 
-                <strong>GPA 5.00</strong>
+                <div class="fact-card">
+                    <span>SSC</span>
+                    <strong>2025 — GPA 5.00</strong>
+                </div>
 
-                <p>
-                    Completed in 2025
-                </p>
+                <div class="fact-card">
+                    <span>College</span>
+                    <strong data-en="Manikchhari Giri Maitri Government Degree College"
+                            data-bn="মানিকছড়ি গিরি মৈত্রী সরকারি ডিগ্রি কলেজ">
+                        Manikchhari Giri Maitri Government Degree College
+                    </strong>
+                </div>
 
-            </div>
+                <div class="fact-card">
+                    <span data-en="Career Goal"
+                          data-bn="ক্যারিয়ার লক্ষ্য">
+                        Career Goal
+                    </span>
 
-
-            <div class="fact">
-
-                <small>FOCUS</small>
-
-                <strong>Electronics</strong>
-
-                <p>
-                    Solar • IPS • Inverter
-                </p>
-
-            </div>
-
-
-            <div class="fact">
-
-                <small>BASED IN</small>
-
-                <strong>Bangladesh</strong>
-
-                <p>
-                    Learning & Building
-                </p>
+                    <strong data-en="Skilled Electronics Engineer"
+                            data-bn="দক্ষ ইলেকট্রনিক্স ইঞ্জিনিয়ার">
+                        Skilled Electronics Engineer
+                    </strong>
+                </div>
 
             </div>
 
@@ -303,115 +239,102 @@
 
 <!-- ================= SKILLS ================= -->
 
-<section class="section" id="skills">
+<section class="section section-soft" id="skills">
 
-    <div class="section-heading reveal">
+    <div class="container">
 
-        <span>02 / SKILLS</span>
+        <div class="section-heading">
 
-        <h2>
-            What I like<br>
-            <em>to work with.</em>
-        </h2>
+            <span class="section-number">02</span>
 
-    </div>
+            <div>
+                <p class="section-label"
+                   data-en="MY SKILLS"
+                   data-bn="আমার দক্ষতা">
+                    MY SKILLS
+                </p>
 
-
-    <div class="skills-grid">
-
-
-        <div class="skill-card reveal">
-
-            <div class="number">01</div>
-
-            <i class="fa-solid fa-code"></i>
-
-            <h3>Website Creation</h3>
-
-            <p>
-                Modern, responsive websites and
-                digital interfaces.
-            </p>
+                <h2 data-en="Things I enjoy working with."
+                    data-bn="যেসব কাজ করতে আমি আগ্রহী।">
+                    Things I enjoy working with.
+                </h2>
+            </div>
 
         </div>
 
 
-        <div class="skill-card reveal">
+        <div class="skills-grid">
 
-            <div class="number">02</div>
+            <article class="skill-card">
 
-            <i class="fa-solid fa-microchip"></i>
+                <span class="skill-index">01</span>
 
-            <h3>Electronics</h3>
+                <h3 data-en="Social Media Problem Solving"
+                    data-bn="সোশ্যাল মিডিয়া সমস্যা সমাধান">
+                    Social Media Problem Solving
+                </h3>
 
-            <p>
-                Practical electronics work and
-                system troubleshooting.
-            </p>
+                <p data-en="Helping with social media account recovery, security and common account problems."
+                   data-bn="সোশ্যাল মিডিয়া অ্যাকাউন্ট রিকভারি, নিরাপত্তা এবং বিভিন্ন সাধারণ সমস্যার সমাধানে কাজ করা।">
+                    Helping with social media account recovery,
+                    security and common account problems.
+                </p>
 
-        </div>
-
-
-        <div class="skill-card reveal">
-
-            <div class="number">03</div>
-
-            <i class="fa-solid fa-solar-panel"></i>
-
-            <h3>Solar & Inverter</h3>
-
-            <p>
-                Solar, IPS, batteries and
-                inverter systems.
-            </p>
-
-        </div>
+            </article>
 
 
-        <div class="skill-card reveal">
+            <article class="skill-card">
 
-            <div class="number">04</div>
+                <span class="skill-index">02</span>
 
-            <i class="fa-solid fa-mobile-screen"></i>
+                <h3 data-en="Website Creation"
+                    data-bn="ওয়েবসাইট তৈরি">
+                    Website Creation
+                </h3>
 
-            <h3>Social Media</h3>
+                <p data-en="Creating modern and responsive websites with the help of AI and web technologies."
+                   data-bn="AI এবং ওয়েব প্রযুক্তির সাহায্যে আধুনিক ও responsive ওয়েবসাইট তৈরি করা।">
+                    Creating modern and responsive websites
+                    with the help of AI and web technologies.
+                </p>
 
-            <p>
-                Social-media account problems
-                and solutions.
-            </p>
-
-        </div>
-
-
-        <div class="skill-card reveal">
-
-            <div class="number">05</div>
-
-            <i class="fa-solid fa-video"></i>
-
-            <h3>Video Editing</h3>
-
-            <p>
-                Editing content for social and
-                digital platforms.
-            </p>
-
-        </div>
+            </article>
 
 
-        <div class="skill-card reveal">
+            <article class="skill-card">
 
-            <div class="number">06</div>
+                <span class="skill-index">03</span>
 
-            <i class="fa-solid fa-lightbulb"></i>
+                <h3 data-en="Electronics Work"
+                    data-bn="ইলেকট্রনিক্স কাজ">
+                    Electronics Work
+                </h3>
 
-            <h3>Problem Solving</h3>
+                <p data-en="Practical experience with electronics, solar, IPS and hybrid inverter systems."
+                   data-bn="ইলেকট্রনিক্স, সোলার, IPS এবং hybrid inverter system নিয়ে ব্যবহারিক কাজের অভিজ্ঞতা।">
+                    Practical experience with electronics,
+                    solar, IPS and hybrid inverter systems.
+                </p>
 
-            <p>
-                Learning, testing and finding
-                practical solutions.
-            </p>
+            </article>
+
+
+            <article class="skill-card">
+
+                <span class="skill-index">04</span>
+
+                <h3 data-en="Video Editing"
+                    data-bn="ভিডিও এডিটিং">
+                    Video Editing
+                </h3>
+
+                <p data-en="Creating and editing short-form digital content for social media platforms."
+                   data-bn="সোশ্যাল মিডিয়ার জন্য short-form digital content তৈরি ও এডিট করা।">
+                    Creating and editing short-form digital
+                    content for social media platforms.
+                </p>
+
+            </article>
 
         </div>
 
@@ -424,100 +347,116 @@
 
 <section class="section" id="projects">
 
-    <div class="section-heading reveal">
+    <div class="container">
 
-        <span>03 / SELECTED WORK</span>
+        <div class="section-heading">
 
-        <h2>
-            Projects that<br>
-            <em>keep me building.</em>
-        </h2>
+            <span class="section-number">03</span>
 
-    </div>
-
-
-    <div class="projects-grid">
-
-
-        <div class="project-card reveal">
-
-            <div class="project-image">
-
-                <span>01</span>
-
-                <i class="fa-solid fa-globe"></i>
-
-                <strong>RUPELIA</strong>
-
-            </div>
-
-            <div class="project-content">
-
-                <small>
-                    E-COMMERCE / WEB
-                </small>
-
-                <h3>
-                    RUPELIA
-                </h3>
-
-                <p>
-
-                    A modern e-commerce website
-                    project focused on a clean
-                    digital shopping experience.
-
+            <div>
+                <p class="section-label"
+                   data-en="PROJECTS"
+                   data-bn="প্রজেক্ট">
+                    PROJECTS
                 </p>
 
-                <a href="https://rupelia.me/"
-                    target="_blank">
-
-                    View Live Project
-
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-                </a>
-
+                <h2 data-en="A few things I've built."
+                    data-bn="আমি তৈরি করা কিছু কাজ।">
+                    A few things I've built.
+                </h2>
             </div>
 
         </div>
 
 
-        <div class="project-card reveal">
+        <div class="projects-grid">
 
-            <div class="project-image coming">
+            <article class="project-card featured-project">
 
-                <span>02</span>
+                <div class="project-top">
 
-                <i class="fa-solid fa-plus"></i>
+                    <span>01</span>
 
-                <strong>COMING SOON</strong>
+                    <span class="project-status"
+                          data-en="LIVE"
+                          data-bn="চালু আছে">
+                        LIVE
+                    </span>
 
-            </div>
+                </div>
 
-            <div class="project-content">
+                <div>
 
-                <small>
-                    NEXT PROJECT
-                </small>
+                    <p class="project-type"
+                       data-en="E-COMMERCE WEBSITE"
+                       data-bn="ই-কমার্স ওয়েবসাইট">
+                        E-COMMERCE WEBSITE
+                    </p>
 
-                <h3>
-                    More To Come
-                </h3>
+                    <h3>RUPELIA</h3>
 
-                <p>
+                    <p data-en="A fashion-focused e-commerce project designed for a modern online shopping experience."
+                       data-bn="আধুনিক অনলাইন শপিং অভিজ্ঞতার জন্য তৈরি একটি fashion-focused e-commerce project।">
+                        A fashion-focused e-commerce project
+                        designed for a modern online shopping experience.
+                    </p>
 
-                    New websites and creative
-                    experiments will appear here
-                    as I continue learning and building.
+                </div>
 
-                </p>
+                <a href="https://rupelia.me/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="project-link"
+                   data-en="Visit Project →"
+                   data-bn="প্রজেক্ট দেখুন →">
+                    Visit Project →
+                </a>
 
-                <span class="coming-link">
-                    In Progress
+            </article>
+
+
+            <article class="project-card upcoming-project">
+
+                <div class="project-top">
+
+                    <span>02</span>
+
+                    <span class="project-status"
+                          data-en="COMING SOON"
+                          data-bn="শীঘ্রই">
+                        COMING SOON
+                    </span>
+
+                </div>
+
+                <div>
+
+                    <p class="project-type"
+                       data-en="FUTURE PROJECT"
+                       data-bn="ভবিষ্যৎ প্রজেক্ট">
+                        FUTURE PROJECT
+                    </p>
+
+                    <h3 data-en="More To Come"
+                        data-bn="আরও আসছে">
+                        More To Come
+                    </h3>
+
+                    <p data-en="More digital projects and experiments will be added here as I continue learning and building."
+                       data-bn="আমি শেখা ও নতুন কিছু তৈরি করা চালিয়ে যাওয়ার সঙ্গে সঙ্গে এখানে আরও digital project যুক্ত হবে।">
+                        More digital projects and experiments will be
+                        added here as I continue learning and building.
+                    </p>
+
+                </div>
+
+                <span class="project-link muted-link"
+                      data-en="Stay Tuned"
+                      data-bn="অপেক্ষায় থাকুন">
+                    Stay Tuned
                 </span>
 
-            </div>
+            </article>
 
         </div>
 
@@ -528,99 +467,67 @@
 
 <!-- ================= CONTACT ================= -->
 
-<section class="section contact-section" id="contact">
+<section class="section section-contact" id="contact">
 
-    <div class="contact-box reveal">
+    <div class="container">
 
+        <div class="contact-box">
 
-        <div class="contact-left">
+            <div>
 
-            <span>
-                04 / CONTACT
-            </span>
+                <p class="section-label"
+                   data-en="GET IN TOUCH"
+                   data-bn="যোগাযোগ করুন">
+                    GET IN TOUCH
+                </p>
 
-            <h2>
-                Have an idea?<br>
-                <em>Let's connect.</em>
-            </h2>
+                <h2 data-en="Have an idea or need help?"
+                    data-bn="কোনো আইডিয়া আছে বা সাহায্য প্রয়োজন?">
+                    Have an idea or need help?
+                </h2>
 
-            <p>
+                <p data-en="Feel free to contact me through WhatsApp, email or Facebook."
+                   data-bn="WhatsApp, email অথবা Facebook-এর মাধ্যমে আমার সঙ্গে যোগাযোগ করতে পারেন।">
+                    Feel free to contact me through WhatsApp,
+                    email or Facebook.
+                </p>
 
-                For a project, collaboration
-                or simply to say hello,
-                you can reach me here.
-
-            </p>
-
-        </div>
-
-
-        <div class="contact-list">
+            </div>
 
 
-            <a href="https://wa.me/8801606598948"
-                target="_blank">
+            <div class="contact-links">
 
-                <i class="fa-brands fa-whatsapp"></i>
+                <a href="https://wa.me/8801606598948"
+                   target="_blank"
+                   rel="noopener noreferrer">
 
-                <div>
+                    <span>WhatsApp</span>
+                    <strong>01606598948</strong>
 
-                    <small>
-                        WHATSAPP
-                    </small>
+                </a>
 
-                    <strong>
-                        01606598948
+
+                <a href="mailto:Ibrahim71kholil@gmail.com">
+
+                    <span>Email</span>
+                    <strong>Ibrahim71kholil@gmail.com</strong>
+
+                </a>
+
+
+                <a href="https://www.facebook.com/share/1DYD6DpJhE/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    <span>Facebook</span>
+                    <strong data-en="Connect with me"
+                            data-bn="যোগাযোগ করুন">
+                        Connect with me
                     </strong>
 
-                </div>
+                </a>
 
-                <b>↗</b>
-
-            </a>
-
-
-            <a href="mailto:Ibrahim71kholil@gmail.com">
-
-                <i class="fa-solid fa-envelope"></i>
-
-                <div>
-
-                    <small>
-                        EMAIL
-                    </small>
-
-                    <strong>
-                        Ibrahim71kholil@gmail.com
-                    </strong>
-
-                </div>
-
-                <b>↗</b>
-
-            </a>
-
-
-            <a href="https://www.facebook.com/share/1DYD6DpJhE/"
-                target="_blank">
-
-                <i class="fa-brands fa-facebook-f"></i>
-
-                <div>
-
-                    <small>
-                        FACEBOOK
-                    </small>
-
-                    <strong>
-                        Connect With Me
-                    </strong>
-
-                </div>
-
-                <b>↗</b>
-
-            </a>
+            </div>
 
         </div>
 
@@ -628,69 +535,36 @@
 
 </section>
 
+</main>
+
 
 <!-- ================= FOOTER ================= -->
 
-<footer>
+<footer class="footer">
 
-    <div class="footer-logo">
-
-        MD<span>.</span>IBRAHIM
+    <div class="container footer-inner">
 
         <p>
-            Learning • Creating • Growing
+            © <span id="year"></span> MD.IBRAHIM
+        </p>
+
+        <p data-en="Built with curiosity & technology."
+           data-bn="কৌতূহল ও প্রযুক্তির মাধ্যমে তৈরি।">
+            Built with curiosity & technology.
         </p>
 
     </div>
 
-
-    <div class="footer-social">
-
-        <a href="https://www.facebook.com/share/1DYD6DpJhE/"
-            target="_blank">
-
-            <i class="fa-brands fa-facebook-f"></i>
-
-        </a>
-
-        <a href="https://www.tiktok.com/@ifibrahim948"
-            target="_blank">
-
-            <i class="fa-brands fa-tiktok"></i>
-
-        </a>
-
-        <a href="https://youtube.com/@typing-948"
-            target="_blank">
-
-            <i class="fa-brands fa-youtube"></i>
-
-        </a>
-
-        <a href="mailto:Ibrahim71kholil@gmail.com">
-
-            <i class="fa-solid fa-envelope"></i>
-
-        </a>
-
-    </div>
-
-
-    <small>
-        © 2026 MD.IBRAHIM. All Rights Reserved.
-    </small>
-
 </footer>
 
 
-<button id="topButton" class="top-button">
+<!-- ================= TOP BUTTON ================= -->
 
-    <i class="fa-solid fa-arrow-up"></i>
-
+<button id="topBtn" class="top-btn" aria-label="Back to top">
+    ↑
 </button>
 
 
-<!-- JavaScript -->
 <script src="script.js"></script>
 
 </body>
