@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description"
+        content="MD.IBRAHIM — Student, Web Creator and Electronics Enthusiast">
+
     <title>MD.IBRAHIM | Personal Portfolio</title>
 
-    <meta name="description" content="MD.IBRAHIM - Student, Web Creator and Electronics Enthusiast.">
-    <meta name="author" content="MD.IBRAHIM">
-
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Google Font -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -34,20 +37,24 @@
     <nav class="nav" id="nav">
 
         <a href="#home" class="active">Home</a>
+
         <a href="#about">About</a>
+
         <a href="#skills">Skills</a>
+
         <a href="#projects">Projects</a>
+
         <a href="#contact">Contact</a>
 
     </nav>
 
-    <div class="header-actions">
+    <div class="header-buttons">
 
-        <button id="themeToggle" class="icon-btn" aria-label="Change theme">
+        <button id="themeToggle" class="icon-btn">
             <i class="fa-solid fa-moon"></i>
         </button>
 
-        <button id="menuToggle" class="menu-btn" aria-label="Open menu">
+        <button id="menuToggle" class="icon-btn menu-btn">
             <i class="fa-solid fa-bars"></i>
         </button>
 
@@ -56,63 +63,79 @@
 </header>
 
 
-<!-- ================= MAIN ================= -->
-
-<main>
-
 <!-- ================= HERO ================= -->
 
 <section class="hero" id="home">
 
-    <div class="hero-bg"></div>
+    <div class="hero-background"></div>
 
-    <div class="hero-content">
+    <div class="hero-container">
 
-        <div class="hero-text">
+        <!-- LEFT -->
 
-            <p class="eyebrow">
-                <span></span> WELCOME TO MY WORLD
+        <div class="hero-content reveal">
+
+            <div class="availability">
+
+                <span></span>
+
+                AVAILABLE FOR CREATIVE PROJECTS
+
+            </div>
+
+            <p class="small-title">
+                PERSONAL PORTFOLIO / 2026
             </p>
 
             <h1>
-                Hi, I'm <br>
-                <strong>MD.IBRAHIM</strong>
+                MD.<br>
+                <span>IBRAHIM</span>
             </h1>
 
-            <h2>
-                Student <span>•</span> Web Creator
-                <span>•</span> Electronics Enthusiast
-            </h2>
+            <h3>
+                Student
+                <b>•</b>
+                Web Creator
+                <b>•</b>
+                Electronics Enthusiast
+            </h3>
 
             <p class="hero-description">
+
                 Learning, creating and turning ideas into reality.
-                I enjoy building digital experiences and working with electronics.
+                I build digital experiences and work with practical
+                electronics, solar and inverter systems.
+
             </p>
 
             <div class="hero-buttons">
 
-                <a href="#projects" class="btn primary-btn">
-                    View My Work
+                <a href="#projects" class="btn primary">
+                    Explore My Work
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
 
-                <a href="#contact" class="btn secondary-btn">
-                    Contact Me
+                <a href="#contact" class="btn secondary">
+                    Let's Talk
                 </a>
 
             </div>
 
-            <div class="social-mini">
 
-                <a href="https://www.facebook.com/share/1DYD6DpJhE/" target="_blank">
+            <div class="social-icons">
+
+                <a href="https://www.facebook.com/share/1DYD6DpJhE/"
+                    target="_blank">
                     <i class="fa-brands fa-facebook-f"></i>
                 </a>
 
-                <a href="https://www.tiktok.com/@ifibrahim948" target="_blank">
+                <a href="https://www.tiktok.com/@ifibrahim948"
+                    target="_blank">
                     <i class="fa-brands fa-tiktok"></i>
                 </a>
 
-                <a href="https://youtube.com/@typing-948" target="_blank">
+                <a href="https://youtube.com/@typing-948"
+                    target="_blank">
                     <i class="fa-brands fa-youtube"></i>
                 </a>
 
@@ -125,23 +148,38 @@
         </div>
 
 
-        <div class="hero-photo">
+        <!-- RIGHT PHOTO -->
 
-            <div class="photo-glow"></div>
+        <div class="photo-section reveal">
 
-            <div class="photo-frame">
+            <div class="photo-frame"></div>
 
+            <div class="photo-card">
+
+                <!-- IMPORTANT: আপনার ছবির path -->
                 <img src="images/profile.jpg"
-                     alt="MD.IBRAHIM">
+                    alt="MD.IBRAHIM">
+
+                <div class="photo-gradient"></div>
+
+                <div class="photo-label">
+
+                    <i class="fa-solid fa-bolt"></i>
+
+                    <span>
+                        Building with purpose
+                    </span>
+
+                </div>
 
             </div>
 
-            <div class="floating-card">
-                <i class="fa-solid fa-bolt"></i>
-                <div>
-                    <strong>Always Learning</strong>
-                    <small>Building the future</small>
-                </div>
+            <div class="photo-info">
+
+                <strong>MD.IBRAHIM</strong>
+
+                <span>Bangladesh</span>
+
             </div>
 
         </div>
@@ -153,122 +191,106 @@
 
 <!-- ================= ABOUT ================= -->
 
-<section class="section about" id="about">
+<section class="section" id="about">
 
-    <div class="section-heading">
+    <div class="section-heading reveal">
 
-        <p class="section-label">ABOUT ME</p>
+        <span>01 / ABOUT</span>
 
         <h2>
-            A student with a passion<br>
-            for <span>technology.</span>
+            Curious by nature.<br>
+            <em>Focused on the future.</em>
         </h2>
 
     </div>
 
-    <div class="about-grid">
 
-        <div class="about-text">
+    <div class="about-container">
 
-            <p>
-                I'm <strong>MD. IBRAHIM</strong>, a student and aspiring
-                electronics engineer from Bangladesh.
+        <div class="about-text reveal">
+
+            <p class="about-big">
+
+                I'm <strong>MD. IBRAHIM</strong>,
+                a student and aspiring electronics engineer
+                from Bangladesh.
+
             </p>
 
             <p>
-                I'm currently studying in HSC 2nd Year. Alongside my studies,
-                I'm passionate about website creation, electronics, solar and
-                inverter systems, video editing, and solving social-media
-                related problems.
+
+                I'm currently studying in HSC 2nd Year.
+                Alongside my studies, I'm passionate about
+                website creation, electronics, solar and
+                inverter systems, video editing and solving
+                social-media related problems.
+
             </p>
 
             <p>
-                I enjoy learning new technologies and turning ideas into
-                useful digital projects. My long-term goal is to become a
-                skilled electronics engineer while continuing to build
-                meaningful digital experiences.
+
+                I enjoy learning new technologies and turning
+                ideas into useful digital projects.
+
+                My long-term goal is to become a skilled
+                electronics engineer while continuing to
+                create meaningful digital experiences.
+
             </p>
 
         </div>
 
 
-        <div class="about-info">
+        <div class="facts reveal">
 
-            <div class="info-card">
-                <span>Education</span>
+            <div class="fact">
+
+                <small>EDUCATION</small>
+
                 <strong>HSC 2nd Year</strong>
-            </div>
-
-            <div class="info-card">
-                <span>SSC Result</span>
-                <strong>GPA 5.00</strong>
-            </div>
-
-            <div class="info-card">
-                <span>SSC Year</span>
-                <strong>2025</strong>
-            </div>
-
-            <div class="info-card">
-                <span>Goal</span>
-                <strong>Electronics Engineer</strong>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= EDUCATION ================= -->
-
-<section class="section education">
-
-    <div class="section-heading">
-
-        <p class="section-label">EDUCATION</p>
-
-        <h2>
-            My academic <span>journey.</span>
-        </h2>
-
-    </div>
-
-    <div class="timeline">
-
-        <div class="timeline-item">
-
-            <div class="timeline-dot"></div>
-
-            <div class="timeline-content">
-
-                <span class="year">2025</span>
-
-                <h3>Secondary School Certificate</h3>
 
                 <p>
-                    Successfully completed SSC with
-                    <strong>GPA 5.00</strong>.
+                    Manikchhari Giri Maitri
+                    Government Degree College
                 </p>
 
             </div>
 
-        </div>
 
+            <div class="fact">
 
-        <div class="timeline-item">
+                <small>SSC</small>
 
-            <div class="timeline-dot"></div>
-
-            <div class="timeline-content">
-
-                <span class="year">CURRENT</span>
-
-                <h3>HSC — 2nd Year</h3>
+                <strong>GPA 5.00</strong>
 
                 <p>
-                    Manikchhari Giri Maitri Government Degree College.
+                    Completed in 2025
+                </p>
+
+            </div>
+
+
+            <div class="fact">
+
+                <small>FOCUS</small>
+
+                <strong>Electronics</strong>
+
+                <p>
+                    Solar • IPS • Inverter
+                </p>
+
+            </div>
+
+
+            <div class="fact">
+
+                <small>BASED IN</small>
+
+                <strong>Bangladesh</strong>
+
+                <p>
+                    Learning & Building
                 </p>
 
             </div>
@@ -282,14 +304,15 @@
 
 <!-- ================= SKILLS ================= -->
 
-<section class="section skills" id="skills">
+<section class="section" id="skills">
 
-    <div class="section-heading">
+    <div class="section-heading reveal">
 
-        <p class="section-label">MY SKILLS</p>
+        <span>02 / SKILLS</span>
 
         <h2>
-            Things I love <span>working with.</span>
+            What I like<br>
+            <em>to work with.</em>
         </h2>
 
     </div>
@@ -297,91 +320,98 @@
 
     <div class="skills-grid">
 
-        <div class="skill-card">
 
-            <div class="skill-icon">
-                <i class="fa-solid fa-code"></i>
-            </div>
+        <div class="skill-card reveal">
+
+            <div class="number">01</div>
+
+            <i class="fa-solid fa-code"></i>
 
             <h3>Website Creation</h3>
 
             <p>
-                Creating modern and responsive websites using web technologies.
+                Modern, responsive websites and
+                digital interfaces.
             </p>
 
         </div>
 
 
-        <div class="skill-card">
+        <div class="skill-card reveal">
 
-            <div class="skill-icon">
-                <i class="fa-solid fa-microchip"></i>
-            </div>
+            <div class="number">02</div>
+
+            <i class="fa-solid fa-microchip"></i>
 
             <h3>Electronics</h3>
 
             <p>
-                Practical electronics work and learning electronic systems.
+                Practical electronics work and
+                system troubleshooting.
             </p>
 
         </div>
 
 
-        <div class="skill-card">
+        <div class="skill-card reveal">
 
-            <div class="skill-icon">
-                <i class="fa-solid fa-solar-panel"></i>
-            </div>
+            <div class="number">03</div>
+
+            <i class="fa-solid fa-solar-panel"></i>
 
             <h3>Solar & Inverter</h3>
 
             <p>
-                Working with solar, IPS, batteries and inverter systems.
+                Solar, IPS, batteries and
+                inverter systems.
             </p>
 
         </div>
 
 
-        <div class="skill-card">
+        <div class="skill-card reveal">
 
-            <div class="skill-icon">
-                <i class="fa-solid fa-mobile-screen"></i>
-            </div>
+            <div class="number">04</div>
+
+            <i class="fa-solid fa-mobile-screen"></i>
 
             <h3>Social Media</h3>
 
             <p>
-                Helping solve social media account-related problems.
+                Social-media account problems
+                and solutions.
             </p>
 
         </div>
 
 
-        <div class="skill-card">
+        <div class="skill-card reveal">
 
-            <div class="skill-icon">
-                <i class="fa-solid fa-video"></i>
-            </div>
+            <div class="number">05</div>
+
+            <i class="fa-solid fa-video"></i>
 
             <h3>Video Editing</h3>
 
             <p>
-                Creating and editing videos for digital platforms.
+                Editing content for social and
+                digital platforms.
             </p>
 
         </div>
 
 
-        <div class="skill-card">
+        <div class="skill-card reveal">
 
-            <div class="skill-icon">
-                <i class="fa-solid fa-lightbulb"></i>
-            </div>
+            <div class="number">06</div>
+
+            <i class="fa-solid fa-lightbulb"></i>
 
             <h3>Problem Solving</h3>
 
             <p>
-                Learning, experimenting and finding practical solutions.
+                Learning, testing and finding
+                practical solutions.
             </p>
 
         </div>
@@ -393,92 +423,104 @@
 
 <!-- ================= PROJECTS ================= -->
 
-<section class="section projects" id="projects">
+<section class="section" id="projects">
 
-    <div class="section-heading">
+    <div class="section-heading reveal">
 
-        <p class="section-label">MY WORK</p>
+        <span>03 / SELECTED WORK</span>
 
         <h2>
-            Projects I've <span>created.</span>
+            Projects that<br>
+            <em>keep me building.</em>
         </h2>
 
     </div>
 
 
-    <div class="project-grid">
+    <div class="projects-grid">
 
-        <article class="project-card">
+
+        <div class="project-card reveal">
 
             <div class="project-image">
 
-                <div class="project-placeholder">
-                    <i class="fa-solid fa-globe"></i>
-                </div>
+                <span>01</span>
 
-                <span class="project-number">01</span>
+                <i class="fa-solid fa-globe"></i>
+
+                <strong>RUPELIA</strong>
 
             </div>
 
             <div class="project-content">
 
-                <span class="project-category">
-                    E-COMMERCE WEBSITE
-                </span>
+                <small>
+                    E-COMMERCE / WEB
+                </small>
 
-                <h3>RUPELIA</h3>
+                <h3>
+                    RUPELIA
+                </h3>
 
                 <p>
-                    A modern e-commerce website project created
-                    as a digital shopping experience.
+
+                    A modern e-commerce website
+                    project focused on a clean
+                    digital shopping experience.
+
                 </p>
 
                 <a href="https://rupelia.me/"
-                   target="_blank"
-                   class="project-link">
+                    target="_blank">
 
-                    View Project
+                    View Live Project
+
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
                 </a>
 
             </div>
 
-        </article>
+        </div>
 
 
-        <article class="project-card coming-soon">
+        <div class="project-card reveal">
 
-            <div class="project-image">
+            <div class="project-image coming">
 
-                <div class="project-placeholder">
-                    <i class="fa-solid fa-plus"></i>
-                </div>
+                <span>02</span>
 
-                <span class="project-number">02</span>
+                <i class="fa-solid fa-plus"></i>
+
+                <strong>COMING SOON</strong>
 
             </div>
 
             <div class="project-content">
 
-                <span class="project-category">
-                    COMING SOON
-                </span>
+                <small>
+                    NEXT PROJECT
+                </small>
 
-                <h3>Future Project</h3>
+                <h3>
+                    More To Come
+                </h3>
 
                 <p>
-                    More creative projects will be added here
+
+                    New websites and creative
+                    experiments will appear here
                     as I continue learning and building.
+
                 </p>
 
-                <span class="project-link disabled">
-                    Coming Soon
+                <span class="coming-link">
+                    In Progress
                 </span>
 
             </div>
 
-        </article>
+        </div>
 
     </div>
 
@@ -487,78 +529,97 @@
 
 <!-- ================= CONTACT ================= -->
 
-<section class="section contact" id="contact">
+<section class="section contact-section" id="contact">
 
-    <div class="contact-box">
+    <div class="contact-box reveal">
 
-        <div class="contact-heading">
 
-            <p class="section-label">GET IN TOUCH</p>
+        <div class="contact-left">
+
+            <span>
+                04 / CONTACT
+            </span>
 
             <h2>
-                Let's create something<br>
-                <span>great together.</span>
+                Have an idea?<br>
+                <em>Let's connect.</em>
             </h2>
 
             <p>
-                Have a question, project idea or just want to say hello?
-                Feel free to contact me.
+
+                For a project, collaboration
+                or simply to say hello,
+                you can reach me here.
+
             </p>
 
         </div>
 
 
-        <div class="contact-links">
+        <div class="contact-list">
+
 
             <a href="https://wa.me/8801606598948"
-               target="_blank"
-               class="contact-item">
+                target="_blank">
 
-                <div class="contact-icon">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </div>
+                <i class="fa-brands fa-whatsapp"></i>
 
                 <div>
-                    <span>WhatsApp</span>
-                    <strong>01606598948</strong>
+
+                    <small>
+                        WHATSAPP
+                    </small>
+
+                    <strong>
+                        01606598948
+                    </strong>
+
                 </div>
 
-                <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+                <b>↗</b>
 
             </a>
 
 
-            <a href="mailto:Ibrahim71kholil@gmail.com"
-               class="contact-item">
+            <a href="mailto:Ibrahim71kholil@gmail.com">
 
-                <div class="contact-icon">
-                    <i class="fa-solid fa-envelope"></i>
-                </div>
+                <i class="fa-solid fa-envelope"></i>
 
                 <div>
-                    <span>Email</span>
-                    <strong>Ibrahim71kholil@gmail.com</strong>
+
+                    <small>
+                        EMAIL
+                    </small>
+
+                    <strong>
+                        Ibrahim71kholil@gmail.com
+                    </strong>
+
                 </div>
 
-                <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+                <b>↗</b>
 
             </a>
 
 
             <a href="https://www.facebook.com/share/1DYD6DpJhE/"
-               target="_blank"
-               class="contact-item">
+                target="_blank">
 
-                <div class="contact-icon">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </div>
+                <i class="fa-brands fa-facebook-f"></i>
 
                 <div>
-                    <span>Facebook</span>
-                    <strong>Connect with me</strong>
+
+                    <small>
+                        FACEBOOK
+                    </small>
+
+                    <strong>
+                        Connect With Me
+                    </strong>
+
                 </div>
 
-                <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+                <b>↗</b>
 
             </a>
 
@@ -568,55 +629,69 @@
 
 </section>
 
-</main>
-
 
 <!-- ================= FOOTER ================= -->
 
-<footer class="footer">
+<footer>
 
     <div class="footer-logo">
+
         MD<span>.</span>IBRAHIM
+
+        <p>
+            Learning • Creating • Growing
+        </p>
+
     </div>
 
-    <p>
-        Learning • Creating • Growing
-    </p>
 
     <div class="footer-social">
 
-        <a href="https://www.facebook.com/share/1DYD6DpJhE/" target="_blank">
+        <a href="https://www.facebook.com/share/1DYD6DpJhE/"
+            target="_blank">
+
             <i class="fa-brands fa-facebook-f"></i>
+
         </a>
 
-        <a href="https://www.tiktok.com/@ifibrahim948" target="_blank">
+        <a href="https://www.tiktok.com/@ifibrahim948"
+            target="_blank">
+
             <i class="fa-brands fa-tiktok"></i>
+
         </a>
 
-        <a href="https://youtube.com/@typing-948" target="_blank">
+        <a href="https://youtube.com/@typing-948"
+            target="_blank">
+
             <i class="fa-brands fa-youtube"></i>
+
         </a>
 
         <a href="mailto:Ibrahim71kholil@gmail.com">
+
             <i class="fa-solid fa-envelope"></i>
+
         </a>
 
     </div>
 
-    <div class="copyright">
+
+    <small>
         © 2026 MD.IBRAHIM. All Rights Reserved.
-    </div>
+    </small>
 
 </footer>
 
 
-<!-- Scroll To Top -->
+<button id="topButton" class="top-button">
 
-<button id="scrollTop" class="scroll-top">
     <i class="fa-solid fa-arrow-up"></i>
+
 </button>
 
 
+<!-- JavaScript -->
 <script src="script.js"></script>
 
 </body>
