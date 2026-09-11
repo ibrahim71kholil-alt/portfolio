@@ -3,243 +3,621 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MD. IBRAHIM - Professional Portfolio</title>
-    <!-- Google Fonts: Poppins (English) & Hind Siliguri (Bengali) -->
+
+    <title>MD.IBRAHIM | Personal Portfolio</title>
+
+    <meta name="description" content="MD.IBRAHIM - Student, Web Creator and Electronics Enthusiast.">
+    <meta name="author" content="MD.IBRAHIM">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Icon Library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
 
-    <header>
-        <div class="container">
-            <nav>
-                <a href="#" class="logo">MD. IBRAHIM</a>
-                <ul class="nav-links" id="nav-links">
-                    <li>
-                        <a href="#about" class="en">About Me</a>
-                        <a href="#about" class="bn">আমার সম্পর্কে</a>
-                    </li>
-                    <li>
-                        <a href="#skills" class="en">Skills</a>
-                        <a href="#skills" class="bn">দক্ষতা</a>
-                    </li>
-                    <li>
-                        <a href="#education" class="en">Education</a>
-                        <a href="#education" class="bn">শিক্ষাগত যোগ্যতা</a>
-                    </li>
-                    <li>
-                        <a href="#projects" class="en">Projects</a>
-                        <a href="#projects" class="bn">প্রজেক্ট</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="en">Contact</a>
-                        <a href="#contact" class="bn">যোগাযোগ</a>
-                    </li>
-                </ul>
-                <!-- Language Toggle Button -->
-                <button id="lang-toggle" class="lang-btn">বাংলা</button>
-                
-                <!-- Mobile Menu Icon -->
-                <div class="menu-btn" id="menu-btn">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
-        </div>
-    </header>
+<!-- ================= HEADER ================= -->
 
-    <section class="hero">
-        <div class="container hero-content">
-            <img src="https://i.postimg.cc/X74D1XnH/4416.jpg" alt="MD. IBRAHIM" class="hero-img">
-            
-            <h1>MD. IBRAHIM</h1>
-            
-            <p class="en">Student | AI Web Developer | Social Media Problem Solver</p>
-            <p class="bn">শিক্ষার্থী | এআই ওয়েব ডেভেলপার | সোশ্যাল মিডিয়া প্রবলেম সলভার</p>
-            
-            <div class="btn-group">
-                <a href="#contact" class="btn btn-primary en">Contact Me</a>
-                <a href="#contact" class="btn btn-primary bn">যোগাযোগ করুন</a>
-                
-                <a href="#projects" class="btn btn-secondary en">View Projects</a>
-                <a href="#projects" class="btn btn-secondary bn">প্রজেক্ট দেখুন</a>
+<header class="header">
+
+    <a href="#home" class="logo">
+        MD<span>.</span>IBRAHIM
+    </a>
+
+    <nav class="nav" id="nav">
+
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+    <div class="header-actions">
+
+        <button id="themeToggle" class="icon-btn" aria-label="Change theme">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <button id="menuToggle" class="menu-btn" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- ================= MAIN ================= -->
+
+<main>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-bg"></div>
+
+    <div class="hero-content">
+
+        <div class="hero-text">
+
+            <p class="eyebrow">
+                <span></span> WELCOME TO MY WORLD
+            </p>
+
+            <h1>
+                Hi, I'm <br>
+                <strong>MD.IBRAHIM</strong>
+            </h1>
+
+            <h2>
+                Student <span>•</span> Web Creator
+                <span>•</span> Electronics Enthusiast
+            </h2>
+
+            <p class="hero-description">
+                Learning, creating and turning ideas into reality.
+                I enjoy building digital experiences and working with electronics.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn primary-btn">
+                    View My Work
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="#contact" class="btn secondary-btn">
+                    Contact Me
+                </a>
+
             </div>
-        </div>
-    </section>
 
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title en">About Me</h2>
-            <h2 class="section-title bn">আমার সম্পর্কে</h2>
-            
-            <div class="about-content">
-                <div class="about-text">
-                    <div class="en">
-                        <p>I am currently studying Science in my second year of HSC at Manikchhari Giri Maitri Government Degree College. I passed my SSC examination in 2025 with a GPA of 5.00.</p>
-                        <p>I aspire to become a skilled Electronic Engineer. Rather than just dreaming, I believe in practical work. I have extensive experience in building websites using AI and resolving social media issues. I am always eager to learn new things and embrace challenges.</p>
-                    </div>
-                    <div class="bn">
-                        <p>আমি বর্তমানে মানিকছড়ি গিরি মৈত্রী সরকারি ডিগ্রি কলেজে এইচএসসি দ্বিতীয় বর্ষে বিজ্ঞান বিভাগে পড়াশোনা করছি। ২০২৫ সালে আমি এসএসসি পরীক্ষায় জিপিএ-৫.০০ পেয়ে উত্তীর্ণ হই।</p>
-                        <p>আমি ভবিষ্যৎ এ একজন দক্ষ ইলেকট্রনিক ইঞ্জিনিয়ার হতে চাই। বড় হয়ে কেবল স্বপ্ন দেখার বদলে বাস্তব কাজের মাধ্যমে কিছু করতে ভালোবাসি। এআই এর সাহায্যে ওয়েবসাইট তৈরি করা এবং সোশ্যাল মিডিয়া সমস্যা সমাধানের কাজে আমার দারুণ অভিজ্ঞতা রয়েছে। আমি নতুন কিছু শিখতে এবং চ্যালেঞ্জ গ্রহণ করতে সবসময় প্রস্তুত থাকি।</p>
-                    </div>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-card">
-                        <i class="fas fa-graduation-cap"></i>
-                        <h3>HSC Student</h3>
-                        <p class="en">Science Group</p>
-                        <p class="bn">বিজ্ঞান বিভাগ</p>
-                    </div>
-                    <div class="stat-card">
-                        <i class="fas fa-code"></i>
-                        <h3>Web Developer</h3>
-                        <p class="en">Using AI</p>
-                        <p class="bn">এআই এর সাহায্যে</p>
-                    </div>
-                </div>
+            <div class="social-mini">
+
+                <a href="https://www.facebook.com/share/1DYD6DpJhE/" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.tiktok.com/@ifibrahim948" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+                <a href="https://youtube.com/@typing-948" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+                <a href="mailto:Ibrahim71kholil@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
             </div>
-        </div>
-    </section>
 
-    <section id="skills">
-        <div class="container">
-            <h2 class="section-title en">My Skills</h2>
-            <h2 class="section-title bn">আমার দক্ষতা</h2>
-            
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fas fa-user-shield"></i>
-                    <h3 class="en">Social Media Problem Solving</h3>
-                    <h3 class="bn">সোশ্যাল মিডিয়া সমস্যা সমাধান</h3>
-                    <p class="en">Account recovery, security, and resolving technical issues.</p>
-                    <p class="bn">অ্যাকাউন্ট রিকভারি, নিরাপত্তা এবং প্রযুক্তিগত সমস্যা সমাধান।</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-robot"></i>
-                    <h3 class="en">AI Web Development</h3>
-                    <h3 class="bn">এআই ওয়েবসাইট তৈরি</h3>
-                    <p class="en">Building fast and responsive websites utilizing modern AI tools.</p>
-                    <p class="bn">আধুনিক টুলস ব্যবহার করে দ্রুত এবং রেস্পন্সিভ ওয়েবসাইট তৈরি।</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-microchip"></i>
-                    <h3 class="en">Electronics Work</h3>
-                    <h3 class="bn">ইলেকট্রনিক্স কাজ</h3>
-                    <p class="en">Circuit design, solar systems, and practical electronics projects.</p>
-                    <p class="bn">সার্কিট ডিজাইন, সোলার সিস্টেম এবং ব্যবহারিক ইলেকট্রনিক্স কাজ।</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-video"></i>
-                    <h3 class="en">Video Editing</h3>
-                    <h3 class="bn">ভিডিও এডিটিং</h3>
-                    <p class="en">Professional video editing skills for content creation.</p>
-                    <p class="bn">প্রফেশনাল কন্টেন্ট তৈরির জন্য ভিডিও এডিটিং দক্ষতা।</p>
+        </div>
+
+
+        <div class="hero-photo">
+
+            <div class="photo-glow"></div>
+
+            <div class="photo-frame">
+
+                <img src="images/profile.jpg"
+                     alt="MD.IBRAHIM">
+
+            </div>
+
+            <div class="floating-card">
+                <i class="fa-solid fa-bolt"></i>
+                <div>
+                    <strong>Always Learning</strong>
+                    <small>Building the future</small>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="education">
-        <div class="container">
-            <h2 class="section-title en">Education</h2>
-            <h2 class="section-title bn">শিক্ষাগত যোগ্যতা</h2>
-            
-            <div class="timeline">
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <h3 class="en">HSC (Ongoing)</h3>
-                        <h3 class="bn">এইচএসসি (অধ্যয়নরত)</h3>
-                        
-                        <p class="year en">2025-2026 (Science)</p>
-                        <p class="year bn">২০২৫-২০২৬ (বিজ্ঞান)</p>
-                        
-                        <p class="en">Manikchhari Giri Maitri Govt. Degree College</p>
-                        <p class="bn">মানিকছড়ি গিরি মৈত্রী সরকারি ডিগ্রি কলেজ</p>
-                    </div>
-                </div>
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <h3 class="en">SSC (Passed)</h3>
-                        <h3 class="bn">এসএসসি (উত্তীর্ণ)</h3>
-                        
-                        <p class="year en">2025</p>
-                        <p class="year bn">২০২৫</p>
-                        
-                        <p class="en">GPA - 5.00</p>
-                        <p class="bn">জিপিএ - ৫.০০</p>
-                    </div>
-                </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="section about" id="about">
+
+    <div class="section-heading">
+
+        <p class="section-label">ABOUT ME</p>
+
+        <h2>
+            A student with a passion<br>
+            for <span>technology.</span>
+        </h2>
+
+    </div>
+
+    <div class="about-grid">
+
+        <div class="about-text">
+
+            <p>
+                I'm <strong>MD. IBRAHIM</strong>, a student and aspiring
+                electronics engineer from Bangladesh.
+            </p>
+
+            <p>
+                I'm currently studying in HSC 2nd Year. Alongside my studies,
+                I'm passionate about website creation, electronics, solar and
+                inverter systems, video editing, and solving social-media
+                related problems.
+            </p>
+
+            <p>
+                I enjoy learning new technologies and turning ideas into
+                useful digital projects. My long-term goal is to become a
+                skilled electronics engineer while continuing to build
+                meaningful digital experiences.
+            </p>
+
+        </div>
+
+
+        <div class="about-info">
+
+            <div class="info-card">
+                <span>Education</span>
+                <strong>HSC 2nd Year</strong>
             </div>
-        </div>
-    </section>
 
-    <section id="projects">
-        <div class="container">
-            <h2 class="section-title en">Projects or Work</h2>
-            <h2 class="section-title bn">প্রজেক্ট বা কাজ</h2>
-            
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-img en">Project Image 1</div>
-                    <div class="project-img bn">প্রজেক্ট ছবি ১</div>
-                    <div class="project-details">
-                        <h3 class="en">AI Portfolio Website</h3>
-                        <h3 class="bn">এআই পোর্টফোলিও ওয়েবসাইট</h3>
-                        <p class="en">A modern portfolio website built using AI tools.</p>
-                        <p class="bn">এটি একটি আধুনিক পোর্টফোলিও ওয়েবসাইট, যা আমি এআই টুলস ব্যবহার করে তৈরি করেছি।</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img en">Project Image 2</div>
-                    <div class="project-img bn">প্রজেক্ট ছবি ২</div>
-                    <div class="project-details">
-                        <h3 class="en">Social Media Recovery Tool</h3>
-                        <h3 class="bn">সোশ্যাল মিডিয়া রিকভারি টুলস</h3>
-                        <p class="en">A script or tool created to assist in recovering social media accounts.</p>
-                        <p class="bn">এটি একটি স্ক্রিপ্ট বা টুলস যা আমি সোশ্যাল মিডিয়া অ্যাকাউন্ট পুনরুদ্ধারে সাহায্য করার জন্য তৈরি করেছি।</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img en">Project Image 3</div>
-                    <div class="project-img bn">প্রজেক্ট ছবি ৩</div>
-                    <div class="project-details">
-                        <h3 class="en">Solar Inverter Circuit</h3>
-                        <h3 class="bn">সোলার ইনভার্টার সার্কিট</h3>
-                        <p class="en">A practical electronics project involving the design of a solar inverter circuit.</p>
-                        <p class="bn">এটি একটি ব্যবহারিক ইলেকট্রনিক্স প্রজেক্ট, যেখানে আমি একটি সোলার ইনভার্টার সার্কিট ডিজাইন করেছি।</p>
-                    </div>
-                </div>
+            <div class="info-card">
+                <span>SSC Result</span>
+                <strong>GPA 5.00</strong>
             </div>
-        </div>
-    </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2 class="section-title en">Contact</h2>
-            <h2 class="section-title bn">যোগাযোগ</h2>
-            
-            <div class="contact-content">
-                <p class="en">You can contact me on the following platforms for any queries:</p>
-                <p class="bn">আমার কাজ বা অন্য কোনো প্রয়োজনে যোগাযোগ করতে পারেন:</p>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/share/1TA5pRzgho/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://wa.me/" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.tiktok.com/@ifibrahim948?_r=1&_t=ZS-99TLzY6gAM8" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
-                    <a href="https://t.me/evu948" target="_blank" class="social-icon"><i class="fab fa-telegram-plane"></i></a>
-                </div>
+            <div class="info-card">
+                <span>SSC Year</span>
+                <strong>2025</strong>
             </div>
-        </div>
-    </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 MD. IBRAHIM. All rights reserved.</p>
-        </div>
-    </footer>
+            <div class="info-card">
+                <span>Goal</span>
+                <strong>Electronics Engineer</strong>
+            </div>
 
-    <script src="script.js"></script>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EDUCATION ================= -->
+
+<section class="section education">
+
+    <div class="section-heading">
+
+        <p class="section-label">EDUCATION</p>
+
+        <h2>
+            My academic <span>journey.</span>
+        </h2>
+
+    </div>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <span class="year">2025</span>
+
+                <h3>Secondary School Certificate</h3>
+
+                <p>
+                    Successfully completed SSC with
+                    <strong>GPA 5.00</strong>.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <span class="year">CURRENT</span>
+
+                <h3>HSC — 2nd Year</h3>
+
+                <p>
+                    Manikchhari Giri Maitri Government Degree College.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+
+<section class="section skills" id="skills">
+
+    <div class="section-heading">
+
+        <p class="section-label">MY SKILLS</p>
+
+        <h2>
+            Things I love <span>working with.</span>
+        </h2>
+
+    </div>
+
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+
+            <div class="skill-icon">
+                <i class="fa-solid fa-code"></i>
+            </div>
+
+            <h3>Website Creation</h3>
+
+            <p>
+                Creating modern and responsive websites using web technologies.
+            </p>
+
+        </div>
+
+
+        <div class="skill-card">
+
+            <div class="skill-icon">
+                <i class="fa-solid fa-microchip"></i>
+            </div>
+
+            <h3>Electronics</h3>
+
+            <p>
+                Practical electronics work and learning electronic systems.
+            </p>
+
+        </div>
+
+
+        <div class="skill-card">
+
+            <div class="skill-icon">
+                <i class="fa-solid fa-solar-panel"></i>
+            </div>
+
+            <h3>Solar & Inverter</h3>
+
+            <p>
+                Working with solar, IPS, batteries and inverter systems.
+            </p>
+
+        </div>
+
+
+        <div class="skill-card">
+
+            <div class="skill-icon">
+                <i class="fa-solid fa-mobile-screen"></i>
+            </div>
+
+            <h3>Social Media</h3>
+
+            <p>
+                Helping solve social media account-related problems.
+            </p>
+
+        </div>
+
+
+        <div class="skill-card">
+
+            <div class="skill-icon">
+                <i class="fa-solid fa-video"></i>
+            </div>
+
+            <h3>Video Editing</h3>
+
+            <p>
+                Creating and editing videos for digital platforms.
+            </p>
+
+        </div>
+
+
+        <div class="skill-card">
+
+            <div class="skill-icon">
+                <i class="fa-solid fa-lightbulb"></i>
+            </div>
+
+            <h3>Problem Solving</h3>
+
+            <p>
+                Learning, experimenting and finding practical solutions.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section class="section projects" id="projects">
+
+    <div class="section-heading">
+
+        <p class="section-label">MY WORK</p>
+
+        <h2>
+            Projects I've <span>created.</span>
+        </h2>
+
+    </div>
+
+
+    <div class="project-grid">
+
+        <article class="project-card">
+
+            <div class="project-image">
+
+                <div class="project-placeholder">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+
+                <span class="project-number">01</span>
+
+            </div>
+
+            <div class="project-content">
+
+                <span class="project-category">
+                    E-COMMERCE WEBSITE
+                </span>
+
+                <h3>RUPELIA</h3>
+
+                <p>
+                    A modern e-commerce website project created
+                    as a digital shopping experience.
+                </p>
+
+                <a href="https://rupelia.me/"
+                   target="_blank"
+                   class="project-link">
+
+                    View Project
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="project-card coming-soon">
+
+            <div class="project-image">
+
+                <div class="project-placeholder">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+
+                <span class="project-number">02</span>
+
+            </div>
+
+            <div class="project-content">
+
+                <span class="project-category">
+                    COMING SOON
+                </span>
+
+                <h3>Future Project</h3>
+
+                <p>
+                    More creative projects will be added here
+                    as I continue learning and building.
+                </p>
+
+                <span class="project-link disabled">
+                    Coming Soon
+                </span>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="section contact" id="contact">
+
+    <div class="contact-box">
+
+        <div class="contact-heading">
+
+            <p class="section-label">GET IN TOUCH</p>
+
+            <h2>
+                Let's create something<br>
+                <span>great together.</span>
+            </h2>
+
+            <p>
+                Have a question, project idea or just want to say hello?
+                Feel free to contact me.
+            </p>
+
+        </div>
+
+
+        <div class="contact-links">
+
+            <a href="https://wa.me/8801606598948"
+               target="_blank"
+               class="contact-item">
+
+                <div class="contact-icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+
+                <div>
+                    <span>WhatsApp</span>
+                    <strong>01606598948</strong>
+                </div>
+
+                <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+            </a>
+
+
+            <a href="mailto:Ibrahim71kholil@gmail.com"
+               class="contact-item">
+
+                <div class="contact-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <div>
+                    <span>Email</span>
+                    <strong>Ibrahim71kholil@gmail.com</strong>
+                </div>
+
+                <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+            </a>
+
+
+            <a href="https://www.facebook.com/share/1DYD6DpJhE/"
+               target="_blank"
+               class="contact-item">
+
+                <div class="contact-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+
+                <div>
+                    <span>Facebook</span>
+                    <strong>Connect with me</strong>
+                </div>
+
+                <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-logo">
+        MD<span>.</span>IBRAHIM
+    </div>
+
+    <p>
+        Learning • Creating • Growing
+    </p>
+
+    <div class="footer-social">
+
+        <a href="https://www.facebook.com/share/1DYD6DpJhE/" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.tiktok.com/@ifibrahim948" target="_blank">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+
+        <a href="https://youtube.com/@typing-948" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+
+        <a href="mailto:Ibrahim71kholil@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 MD.IBRAHIM. All Rights Reserved.
+    </div>
+
+</footer>
+
+
+<!-- Scroll To Top -->
+
+<button id="scrollTop" class="scroll-top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
