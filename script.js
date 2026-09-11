@@ -1,99 +1,170 @@
 /* ================= MOBILE MENU ================= */
 
 const menuToggle = document.getElementById("menuToggle");
-
 const nav = document.getElementById("nav");
 
+if (menuToggle && nav) {
 
-menuToggle.addEventListener("click", function(){
+    menuToggle.addEventListener("click", () => {
 
-    nav.classList.toggle("open");
+        nav.classList.toggle("open");
 
-    const icon = menuToggle.querySelector("i");
-
-    icon.classList.toggle("fa-bars");
-
-    icon.classList.toggle("fa-xmark");
-
-});
-
-
-/* Close menu after clicking */
-
-document.querySelectorAll(".nav a").forEach(function(link){
-
-    link.addEventListener("click", function(){
-
-        nav.classList.remove("open");
+        menuToggle.textContent =
+            nav.classList.contains("open") ? "✕" : "☰";
 
     });
 
-});
 
+    document.querySelectorAll(".nav a").forEach(link => {
 
-/* ================= DARK / LIGHT MODE ================= */
+        link.addEventListener("click", () => {
 
-const themeToggle =
-    document.getElementById("themeToggle");
+            nav.classList.remove("open");
 
+            menuToggle.textContent = "☰";
 
-const savedTheme =
-    localStorage.getItem("md-theme");
+        });
 
-
-if(savedTheme === "light"){
-
-    document.body.classList.add("light");
-
-    themeToggle.innerHTML =
-        '<i class="fa-solid fa-sun"></i>';
+    });
 
 }
 
 
-themeToggle.addEventListener("click", function(){
+/* ================= LANGUAGE ================= */
 
-    document.body.classList.toggle("light");
+const languageBtn = document.getElementById("languageBtn");
+const languageText = document.getElementById("languageText");
 
-    const isLight =
-        document.body.classList.contains("light");
+const savedLanguage =
+    localStorage.getItem("md-ibrahim-language") || "en";
 
 
-    localStorage.setItem(
-        "md-theme",
-        isLight ? "light" : "dark"
+function setLanguage(language){
+
+    const elements =
+        document.querySelectorAll("[data-en][data-bn]");
+
+    elements.forEach(element => {
+
+        if(language === "bn"){
+
+            element.textContent =
+                element.getAttribute("data-bn");
+
+        }else{
+
+            element.textContent =
+                element.getAttribute("data-en");
+
+        }
+
+    });
+
+
+    document.documentElement.lang = language;
+
+    document.body.classList.toggle(
+        "bangla",
+        language === "bn"
     );
 
 
-    themeToggle.innerHTML = isLight
+    /*
+      Button shows the language
+      that user can switch TO.
+    */
 
-        ? '<i class="fa-solid fa-sun"></i>'
+    if(language === "en"){
 
-        : '<i class="fa-solid fa-moon"></i>';
+        languageText.textContent = "বাংলা";
+
+    }else{
+
+        languageText.textContent = "English";
+
+    }
+
+
+    localStorage.setItem(
+        "md-ibrahim-language",
+        language
+    );
+
+}
+
+
+/* First visit = English */
+
+setLanguage(savedLanguage);
+
+
+if(languageBtn){
+
+    languageBtn.addEventListener("click", () => {
+
+        const currentLanguage =
+            localStorage.getItem("md-ibrahim-language") || "en";
+
+        const nextLanguage =
+            currentLanguage === "en" ? "bn" : "en";
+
+        setLanguage(nextLanguage);
+
+    });
+
+}
+
+
+/* ================= TOP BUTTON ================= */
+
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll", () => {
+
+    if(window.scrollY > 500){
+
+        topBtn.classList.add("show");
+
+    }else{
+
+        topBtn.classList.remove("show");
+
+    }
 
 });
 
 
-/* ================= SCROLL ACTIVE MENU ================= */
+if(topBtn){
+
+    topBtn.addEventListener("click", () => {
+
+        window.scrollTo({
+            top:0,
+            behavior:"smooth"
+        });
+
+    });
+
+}
+
+
+/* ================= ACTIVE NAV ================= */
 
 const sections =
     document.querySelectorAll("section[id]");
 
-
-const menuLinks =
+const navLinks =
     document.querySelectorAll(".nav a");
 
 
-window.addEventListener("scroll", function(){
+window.addEventListener("scroll", () => {
 
     let current = "";
 
-
-    sections.forEach(function(section){
+    sections.forEach(section => {
 
         const sectionTop =
-            section.offsetTop - 180;
-
+            section.offsetTop - 150;
 
         if(window.scrollY >= sectionTop){
 
@@ -104,14 +175,12 @@ window.addEventListener("scroll", function(){
     });
 
 
-    menuLinks.forEach(function(link){
+    navLinks.forEach(link => {
 
         link.classList.remove("active");
 
-
         if(
-            link.getAttribute("href") ===
-            "#" + current
+            link.getAttribute("href") === "#" + current
         ){
 
             link.classList.add("active");
@@ -123,72 +192,13 @@ window.addEventListener("scroll", function(){
 });
 
 
-/* ================= REVEAL ANIMATION ================= */
+/* ================= FOOTER YEAR ================= */
 
-const observer =
-    new IntersectionObserver(
+const year = document.getElementById("year");
 
-        function(entries){
+if(year){
 
-            entries.forEach(function(entry){
+    year.textContent =
+        new Date().getFullYear();
 
-                if(entry.isIntersecting){
-
-                    entry.target.classList.add("visible");
-
-                    observer.unobserve(entry.target);
-
-                }
-
-            });
-
-        },
-
-        {
-            threshold:0.12
-        }
-
-    );
-
-
-document
-    .querySelectorAll(".reveal")
-    .forEach(function(element){
-
-        observer.observe(element);
-
-    });
-
-
-/* ================= BACK TO TOP ================= */
-
-const topButton =
-    document.getElementById("topButton");
-
-
-window.addEventListener("scroll", function(){
-
-    if(window.scrollY > 500){
-
-        topButton.classList.add("show");
-
-    }else{
-
-        topButton.classList.remove("show");
-
-    }
-
-});
-
-
-topButton.addEventListener("click", function(){
-
-    window.scrollTo({
-
-        top:0,
-
-        behavior:"smooth"
-
-    });
-
-});
+}
